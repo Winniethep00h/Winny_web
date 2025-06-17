@@ -1,0 +1,220 @@
+/* Reset dan font */
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #fff8dc;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #f7c948;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  margin: 0;
+  color: #a0522d;
+  font-size: 28px;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5c4033;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+nav a:hover {
+  background-color: #fff0c0;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: url('https://upload.wikimedia.org/wikipedia/en/1/14/Winnie_the_Pooh_Disney.png') no-repeat center;
+  background-size: contain;
+  background-color: #fff4e6;
+  background-blend-mode: lighten;
+  height: 400px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin-top: 80px;
+  color: #cc6600;
+}
+
+.hero p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff9900;
+}
+
+/* Konten Umum */
+.content {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  background-color: #fffaf0;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.content h2 {
+  color: #cc6600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Karakter List */
+.karakter-list {
+  list-style: none;
+  padding: 0;
+}
+
+.karakter-list li {
+  background: #fffbe0;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 6px solid #f7c948;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f7c948;
+  color: #5c4033;
+  margin-top: 40px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .hero {
+    height: 300px;
+    background-size: contain;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+    margin-top: 60px;
+  }
+
+  .content {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .karakter-list li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav ul {
+    gap: 6px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .karakter-list li {
+    font-size: 14px;
+  }
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeri-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-kontak {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-kontak input,
+.form-kontak textarea {
+  padding: 10px;
+  border: 2px solid #f7c948;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fffbe0;
+}
+
+.form-kontak button {
+  padding: 10px;
+  background-color: #ffcc00;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-kontak button:hover {
+  background-color: #ff9900;
+}
